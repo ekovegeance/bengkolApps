@@ -8,6 +8,8 @@
         groups:
           - ios
       scripts:
+        - name: Build Android APK
+          script: ./gradlew assembleRelease
         - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
           script: keychain initialize
         - name: Fetch signing files
@@ -30,6 +32,7 @@
         - build/ios/ipa/*.ipa
         - /tmp/xcodebuild_logs/*.log
         - flutter_drive.log
+        - app/build/outputs/**/**/*.apk
       publishing:
         app_store_connect: # For iOS or macOS app
           # For authenticating with App Store Connect and uploading the IPA to App Store Connect (required)
