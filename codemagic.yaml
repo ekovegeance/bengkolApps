@@ -64,17 +64,17 @@
       scripts:        
         - name: Get Flutter packages
           script: |
-                      cd my_app && flutter packages pub get
+                      cd myapp && flutter packages pub get
         - name: Flutter analyze
           script: |
-                      cd my_app && flutter analyze
+                      cd myapp && flutter analyze
         - name: Flutter unit tests
           script: |
                       cd my_app && flutter test
           ignore_failure: true
         - name: Build APK with Flutter
           script: |
-                      cd my_app && flutter build apk --release --build-name=1.0.0 --build-number=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME" --tracks="$GOOGLE_PLAY_TRACK") + 1))
+                      cd myapp && flutter build apk --release --build-name=1.0.0 --build-number=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME" --tracks="$GOOGLE_PLAY_TRACK") + 1))
       artifacts:
         - build/**/outputs/bundle/**/*.aab
         - build/**/outputs/apk/**/*.apk
