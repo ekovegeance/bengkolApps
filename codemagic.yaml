@@ -67,7 +67,7 @@
                       cd myapp && flutter packages pub get        
         - name: Flutter unit tests
           script: |
-                      cd my_app && flutter test
+                      cd myapp && flutter test
           ignore_failure: true
         - name: Build APK with Flutter
           script: |
