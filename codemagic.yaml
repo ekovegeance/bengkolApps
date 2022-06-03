@@ -64,7 +64,7 @@
       scripts:
         - name: Flutter clean
           script: |
-                      cd myapp && flutter flutter clean
+                      cd myapp && flutter clean
         - name: Get Flutter packages
           script: |
                       cd myapp && flutter packages pub get        
