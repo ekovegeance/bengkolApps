@@ -61,7 +61,10 @@
         flutter: stable
         xcode: latest
         cocoapods: default
-      scripts:        
+      scripts:
+        - name: Flutter clean
+          script: |
+                      cd myapp && flutter flutter clean
         - name: Get Flutter packages
           script: |
                       cd myapp && flutter packages pub get        
@@ -71,7 +74,7 @@
           ignore_failure: true
         - name: Build APK with Flutter
           script: |
-                      cd myapp && flutter build apk --release --build-name=1.0.0 --build-number=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME" --tracks="$GOOGLE_PLAY_TRACK") + 1))
+                      cd myapp && flutter build apk --release --no-sound-null-safety
       artifacts:
         - build/**/outputs/bundle/**/*.aab
         - build/**/outputs/apk/**/*.apk
