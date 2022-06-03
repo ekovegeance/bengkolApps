@@ -64,10 +64,7 @@
       scripts:        
         - name: Get Flutter packages
           script: |
-                      cd myapp && flutter packages pub get
-        - name: Flutter analyze
-          script: |
-                      cd myapp && flutter analyze
+                      cd myapp && flutter packages pub get        
         - name: Flutter unit tests
           script: |
                       cd my_app && flutter test
