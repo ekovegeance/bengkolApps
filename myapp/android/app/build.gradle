@@ -51,7 +51,7 @@
         applicationId "com.bengkol.app"
         minSdkVersion 21
         targetSdkVersion flutter.targetSdkVersion
-        versionCode 22060303
+        versionCode 22060313
         versionName flutterVersionName
     }
 

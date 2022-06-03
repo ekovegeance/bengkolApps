@@ -6,7 +6,7 @@
   
   
   
-  import 'package:myapp/src/pages/halamanregistrasi/page.dart';
+  import 'package:myapp/src/pages/splash/page.dart';
   import 'package:teta_cms/teta_cms.dart';
 
   ///NOTE:
@@ -18,7 +18,7 @@
       DeviceOrientation.portraitUp,
     ]);
     await TetaCMS.initialize(
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVrb3ZlZ2VhbmNlN0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicHJvamVjdHMiOlsxMjc1MjcsMTI2ODYwLDEyNjkxMCwxMjY5MTFdLCJpbWFnZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoalVJckJjT1ZXQzE4S0pVVlFzSkYzSmVSSERqbVpmWVRfRVB4bTRRPXM5Ni1jIiwibmFtZSI6ImVrb3ZlZ2VhbmNlIiwiZW1pdHRlciI6IlRldGEtQXV0aCIsImlhdCI6MTY1NDI0MDM1MiwiZXhwIjo0ODEwMDAwMzUyfQ.7RQjR2IeRSbMc-1hEdTRCLPUCPge5fhT0EcjpGBD5a4',
+      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVrb3ZlZ2VhbmNlN0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicHJvamVjdHMiOlsxMjc1MjcsMTI2ODYwLDEyNjkxMCwxMjY5MTFdLCJpbWFnZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoalVJckJjT1ZXQzE4S0pVVlFzSkYzSmVSSERqbVpmWVRfRVB4bTRRPXM5Ni1jIiwibmFtZSI6ImVrb3ZlZ2VhbmNlIiwiZW1pdHRlciI6IlRldGEtQXV0aCIsImlhdCI6MTY1NDI2NTEwMiwiZXhwIjo0ODEwMDI1MTAyfQ.f5pZCFfU0yjofvM832M11ahPb-JKvcmU54MMB1UJWAQ',
       prjId: 126860,
     );
     
@@ -37,7 +37,7 @@
       return MaterialApp(
         title: 'bengkol',
         home: SplashScreenView(
-          navigateRoute: PageHalamanRegistrasi(),
+          navigateRoute: PageSplash(),
           duration: 2200,
           imageSize: 80,
           imageSrc: 'assets/teta-app.png',
